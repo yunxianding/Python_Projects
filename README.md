@@ -43,3 +43,23 @@ Use this template for every new project in this folder:
   - difficulty levels that increase the challenge
   - safer handling of invalid input and interruptions
 - Learning goal: Practice control flow, validation, and building a small game with user interaction.
+
+### Birthday Paradox
+
+- File: [birthday_paradox.py](birthday_paradox.py)
+- Difficulty: Beginner to Intermediate
+- Skills practiced: loops, functions, user input handling, exception handling, randomness, simulation, probability
+- Description: A Monte Carlo simulation game that estimates how likely people in a group are to share your birthday.
+- Rules:
+  - You enter your birthday.
+  - The program lets you choose a group size (for example 20, 40, 60, 100, or a custom size).
+  - It generates random birthdays for that group size many times.
+  - It checks how often at least one person in each group shares your birthday (same month and day).
+  - It shows the probability and average number of matches across all simulations.
+- My improvements:
+  - changed interaction to personalized input based on your birthday
+  - added group-size menu options including class-size style presets
+  - added play-again loop for repeated simulations
+  - improved date-format validation and input error messages
+  - improved output formatting for cleaner summaries
+- Learning goal: Practice simulation thinking, probability intuition, input validation, and cleaner interactive program design.
