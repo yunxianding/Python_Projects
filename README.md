@@ -63,3 +63,24 @@ Use this template for every new project in this folder:
   - improved date-format validation and input error messages
   - improved output formatting for cleaner summaries
 - Learning goal: Practice simulation thinking, probability intuition, input validation, and cleaner interactive program design.
+
+### Blackjack
+
+- File: [blackjack.py](blackjack.py)
+- Difficulty: Beginner to Intermediate
+- Skills practiced: loops, conditionals, functions, input handling, randomness, game logic, debugging
+- Description: A command-line blackjack game where the player tries to beat the dealer by getting closer to 21 without busting.
+- Rules:
+  - The player starts with a bankroll and places a bet each round.
+  - Number cards are worth face value, face cards are worth 10, and Aces can count as 1 or 11.
+  - The dealer hits until reaching 17 and then stands.
+  - The player can hit, stand, or double down on the first two cards.
+  - If the first two cards match in value, the player may split them into two hands and play each separately.
+  - A natural blackjack pays a 10-to-1 payout when the first two cards are an Ace of Spades and a black jack.
+- My improvements:
+  - added a beginner-friendly tutorial that can be skipped or viewed before the game starts
+  - included clear rule explanations and basic strategy advice for new players
+  - added split-hand support for matching pairs
+  - added the natural blackjack payout rule
+  - improved naming consistency and game flow for easier maintenance
+- Learning goal: Practice game-state logic, card-hand evaluation, user prompts, and adding player-friendly rules to a classic game.
