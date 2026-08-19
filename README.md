@@ -84,3 +84,22 @@ Use this template for every new project in this folder:
   - added the natural blackjack payout rule
   - improved naming consistency and game flow for easier maintenance
 - Learning goal: Practice game-state logic, card-hand evaluation, user prompts, and adding player-friendly rules to a classic game.
+
+### Caesar Cipher
+
+- File: [ceasarcipher.py](ceasarcipher.py)
+- Difficulty: Beginner
+- Skills practiced: loops, conditionals, functions, input handling, strings, modulo arithmetic, exception handling
+- Description: A command-line Caesar cipher tool that encrypts or decrypts text using a selected shift key.
+- Rules:
+  - The user chooses whether to encrypt or decrypt.
+  - The user enters a key between 0 and the size of the symbol set.
+  - Each character is shifted through the available alphabet.
+  - Characters outside the allowed symbol set are left unchanged.
+- My improvements:
+  - expanded the symbol set to include uppercase letters, digits, punctuation, and spaces
+  - fixed the mode-selection bug so encrypt and decrypt both work correctly
+  - replaced the broad exception with a clearer clipboard error message
+  - wrapped the script in a `main()` function for cleaner structure and easier testing
+  - added safer handling for optional clipboard support when `pyperclip` is not installed
+- Learning goal: Practice string manipulation, Caesar cipher logic, modular arithmetic, and writing cleaner interactive Python programs.
