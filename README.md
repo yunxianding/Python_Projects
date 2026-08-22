@@ -87,7 +87,7 @@ Use this template for every new project in this folder:
 
 ### Caesar Cipher
 
-- File: [ceasarcipher.py](ceasarcipher.py)
+- File: [caesarcipher.py](caesarcipher.py) (legacy filename spelling)
 - Difficulty: Beginner
 - Skills practiced: loops, conditionals, functions, input handling, strings, modulo arithmetic, exception handling
 - Description: A command-line Caesar cipher tool that encrypts or decrypts text using a selected shift key.
@@ -103,3 +103,20 @@ Use this template for every new project in this folder:
   - wrapped the script in a `main()` function for cleaner structure and easier testing
   - added safer handling for optional clipboard support when `pyperclip` is not installed
 - Learning goal: Practice string manipulation, Caesar cipher logic, modular arithmetic, and writing cleaner interactive Python programs.
+
+### Caesar Hacker
+
+- File: [caesarhacker.py](caesarhacker.py)
+- Difficulty: Beginner
+- Skills practiced: loops, conditionals, functions, string handling, brute-force search, input handling, debugging
+- Description: A command-line Caesar cipher hacker that brute-forces every possible shift and prints all candidate decryptions so you can spot the readable plaintext.
+- Rules:
+  - The user enters an encrypted message.
+  - The program tries every possible key based on the symbol set.
+  - Each key result is printed so the user can identify the correct plaintext.
+  - The user can choose to hack another message in the same run.
+- My improvements:
+  - expanded the symbol set to include digits so mixed letter-number messages can be deciphered
+  - preserved original letter case in decrypted output for better readability
+  - added a main game loop with a play-again prompt
+- Learning goal: Practice brute-force cryptanalysis, improve string transformation logic, and structure a small interactive program with reusable functions.
