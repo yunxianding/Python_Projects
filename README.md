@@ -87,7 +87,7 @@ Use this template for every new project in this folder:
 
 ### Caesar Cipher
 
-- File: [caesarcipher.py](caesarcipher.py) (legacy filename spelling)
+- File: [caesarcipher.py](caesarcipher.py) 
 - Difficulty: Beginner
 - Skills practiced: loops, conditionals, functions, input handling, strings, modulo arithmetic, exception handling
 - Description: A command-line Caesar cipher tool that encrypts or decrypts text using a selected shift key.
