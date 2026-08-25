@@ -120,3 +120,23 @@ Use this template for every new project in this folder:
   - preserved original letter case in decrypted output for better readability
   - added a main game loop with a play-again prompt
 - Learning goal: Practice brute-force cryptanalysis, improve string transformation logic, and structure a small interactive program with reusable functions.
+
+### Calendar Maker
+
+- File: [calendarmaker.py](calendarmaker.py)
+- Difficulty: Beginner to Intermediate
+- Skills practiced: loops, conditionals, functions, input handling, exception handling, date handling, validation, file I/O
+- Description: A command-line calendar generator that prints a monthly calendar and saves it to a text file, with optional special-day notes.
+- Rules:
+  - The user enters a valid year and month.
+  - The program generates a month view aligned from Sunday to Saturday.
+  - The user can add special-day notes by choosing a day number and entering short event text.
+  - Notes are displayed inside each day cell and the calendar is saved as a `.txt` file.
+  - The user can create another calendar in the same run.
+- My improvements:
+  - refactored the script into a `main()`-driven loop for repeated use
+  - added stronger validation with targeted `ValueError` checks for year, month, and day ranges
+  - added safer exception handling for user input, file writing errors, and `KeyboardInterrupt`
+  - added special-day note support with per-day text entries
+  - advised users to keep event names within 10 characters for better visual formatting
+- Learning goal: Practice building a cleaner interactive CLI tool with robust validation, exception handling, and feature extensions on top of a date-based formatter.
