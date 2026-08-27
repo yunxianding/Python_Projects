@@ -140,3 +140,29 @@ Use this template for every new project in this folder:
   - added special-day note support with per-day text entries
   - advised users to keep event names within 10 characters for better visual formatting
 - Learning goal: Practice building a cleaner interactive CLI tool with robust validation, exception handling, and feature extensions on top of a date-based formatter.
+
+### Cho-Han
+
+- File: [chohan.py](chohan.py)
+- Difficulty: Beginner to Intermediate
+- Skills practiced: loops, functions, dictionaries, conditionals, input validation, randomness, and game-state management
+- Description: A multiplayer command-line dice betting game based on the traditional Japanese game Cho-Han. The player competes against computer-controlled gamblers, each with an independent purse.
+- Rules:
+  - The player and computer gamblers begin with 5,000 mon each.
+  - Each active gambler places one wager before two dice are rolled.
+  - A Cho bet wins when the dice total is even; a Han bet wins when the total is odd.
+  - Players may instead bet on an exact total from 2 through 12.
+  - Correct Cho or Han bets pay 1x the wager as profit.
+  - Correct exact-number bets pay 5x the wager as profit.
+  - A total of 7 gives winning bets an additional 1x bonus.
+  - Snake eyes, a total of 2, gives winning bets an additional 2x bonus.
+  - A losing wager is removed from the gambler's purse.
+  - The game continues until the player quits or runs out of mon. Computer gamblers with empty purses leave the game.
+- My improvements:
+  - added a main game loop with replay and quit options
+  - added three computer-controlled gamblers with independent purses
+  - added exact-number betting for totals from 2 through 12
+  - added bonus payouts for lucky seven and snake eyes
+  - added input validation for wagers and predictions
+  - organized the game into reusable functions for bets, rounds, and payout settlement
+- Learning goal: Practice decomposing an interactive game into functions while tracking multiple players, wagers, payouts, and changing game state.
