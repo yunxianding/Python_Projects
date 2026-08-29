@@ -166,3 +166,22 @@ Use this template for every new project in this folder:
   - added input validation for wagers and predictions
   - organized the game into reusable functions for bets, rounds, and payout settlement
 - Learning goal: Practice decomposing an interactive game into functions while tracking multiple players, wagers, payouts, and changing game state.
+
+### Conway's Game of Life
+
+- File: [conwaysgameoflife.py](conwaysgameoflife.py)
+- Difficulty: Intermediate
+- Skills practiced: loops, functions, dictionaries, sets, randomness, file I/O, command-line arguments, and simulation logic
+- Description: A terminal simulation of Conway's Game of Life, where cells evolve across generations according to their living neighbors.
+- Rules:
+  - A living cell survives when it has two or three living neighbors.
+  - A dead cell becomes living when it has exactly three living neighbors.
+  - All other cells become or remain dead.
+  - The board wraps around at each edge, creating a continuous toroidal grid.
+- My improvements:
+  - added a main game loop with continuous generation updates
+  - added a configurable random starting percentage with `--live-percentage`
+  - added editable text-file starting states with `--initial-state`
+  - added sparse neighbor counting that visits cells near living cells only
+  - added command-line validation for board density and animation delay
+- Learning goal: Practice simulation design, efficient state traversal, file input, and organizing a command-line program with reusable functions.
