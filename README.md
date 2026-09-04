@@ -185,3 +185,20 @@ Use this template for every new project in this folder:
   - added sparse neighbor counting that visits cells near living cells only
   - added command-line validation for board density and animation delay
 - Learning goal: Practice simulation design, efficient state traversal, file input, and organizing a command-line program with reusable functions.
+
+### Etching Drawer
+
+- File: [etchingdrawer.py](etchingdrawer.py)
+- Difficulty: Intermediate
+- Skills practiced: loops, functions, dictionaries, sets, terminal input, terminal sizing, file I/O, and exception handling
+- Description: A terminal drawing tool where the user moves a cursor with WASD keys and leaves connected lines behind.
+- Rules:
+  - Use `W`, `A`, `S`, and `D` to move the cursor up, left, down, and right.
+  - Use `H` for help, `C` to clear the drawing, `F` to save, or `QUIT` to exit.
+  - The cursor cannot move beyond the visible terminal canvas.
+  - Saved drawings include the command history and a text rendering of the canvas.
+- My improvements:
+  - added a `main()` game loop so importing the module does not start the game
+  - replaced the invalid abstract `Set` construction with regular mutable sets
+  - separated movement, rendering, terminal sizing, and file-saving logic into functions
+- Learning goal: Practice interactive program structure, state management, terminal rendering, file handling, and exception handling.
